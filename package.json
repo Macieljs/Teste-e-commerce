@@ -1,0 +1,23 @@
+{
+  "name": "teste-e-commerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Macieljs/Teste-e-commerce.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Macieljs/Teste-e-commerce/issues"
+  },
+  "homepage": "https://github.com/Macieljs/Teste-e-commerce#readme",
+  "devDependencies": {
+    "cypress": "^14.1.0"
+  }
+}
