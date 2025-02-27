@@ -1,8 +1,12 @@
 class RegisterPage{
 
-    funcionalidadeLogin(email,firstname,lastname,password,day,month,years){
+
+    createAccount(email){
         cy.get('#email_create').type(email)
         cy.get('#SubmitCreate > span').click()
+    }
+
+    funcionalidadeRegistro(email,firstname,lastname,password,day,month,years){
         cy.get('#id_gender1').click()
         cy.get('#customer_firstname').type(firstname)
         cy.get('#customer_lastname').type(lastname)
@@ -12,9 +16,6 @@ class RegisterPage{
         cy.get('#months').select(month)
         cy.get('#years').select(`${years}`) //Gambiarra para funcionar o select
         cy.get('#submitAccount > span').click()
-
-
-
     }
 
 
