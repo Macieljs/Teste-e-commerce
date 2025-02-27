@@ -25,7 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('login', (email, senha) => { 
-    cy.get('.login').click()
+    
     cy.get('#email').type(email)
     cy.get('#passwd').type(senha)
     cy.get('#SubmitLogin > span').click()
