@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -19,6 +18,7 @@
   },
   "homepage": "https://github.com/Macieljs/Teste-e-commerce#readme",
   "devDependencies": {
+    "@faker-js/faker": "^9.5.0",
     "cypress": "^14.1.0"
   }
 }
