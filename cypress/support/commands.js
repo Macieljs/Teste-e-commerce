@@ -24,13 +24,20 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('login', (email, senha) => { 
-    
+Cypress.Commands.add('login', (email, senha) => {
+
     cy.get('#email').type(email)
     cy.get('#passwd').type(senha)
     cy.get('#SubmitLogin > span').click()
 
 
+
+
+})
+
+Cypress.Commands.add('entrar', () => {
+    cy.visit("controller=authentication&back=my-account")
+    cy.get('.login').click()
 
 
 })

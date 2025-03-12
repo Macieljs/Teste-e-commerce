@@ -1,10 +1,9 @@
-import dados from '../fixtures/dados_login.json'
+import dados from '../../fixtures/dados_login.json';
 
 
 describe('Login - Validação do fluxo de autenticação', () => {
     beforeEach(() => {
-        cy.visit("controller=authentication&back=my-account")
-        cy.get('.login').click()
+        cy.entrar()
     });
     it('Deve permitir que um usuário válido faça login com sucesso', () => {
       cy.login(dados.email,dados.senha)
