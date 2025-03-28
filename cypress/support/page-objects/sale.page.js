@@ -12,6 +12,28 @@ class SalePage {
         
         
     }
+    pagamentoDinheiro(){
+        cy.get('.button-medium > span').click()
+        cy.get('.cart_navigation > .button > span').click()
+        cy.get('.cart_navigation > .button > span').click()
+        cy.get('#cgv').click()
+        cy.get('.cart_navigation > .button > span').click()
+        cy.get('.cheque').click()
+        cy.get('#cart_navigation > .button > span').click()
+
+    
+    }
+    pagamentoCartão(){
+        cy.get('.button-medium > span').click()
+        cy.get('.cart_navigation > .button > span').click()
+        cy.get('.cart_navigation > .button > span').click()
+        cy.get('#cgv').click()
+        cy.get('.cart_navigation > .button > span').click()
+        cy.get('.bankwire').click()
+        cy.get('#cart_navigation > .button > span').click()
+
+    
+    }
 
 
 
